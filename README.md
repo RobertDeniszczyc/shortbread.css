@@ -1,4 +1,4 @@
 Shortbread
 ==========
 
-Lightweight, simple, responsive CSS Framework
+The lightweight & more-ish responsive CSS Framework
