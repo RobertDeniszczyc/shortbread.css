@@ -1,0 +1,217 @@
+/*
+    SHORTBREAD.CSS
+    The lightweight & more-ish responsive CSS Framework built by Robert
+    Author     : Robert Deniszczyc
+    For support tweet @builtbyrobert or email robert@builtbyrobert.com
+*/
+body {
+    margin: 0;
+}
+/* Shortbread Grid System */
+[class*='sh-'] {
+    display: inline-block;
+    float: left;
+}
+
+.sh-1-1 {
+    width: 100%;
+}
+.sh-1-2 {
+    width: 50%;
+}
+.sh-1-3 {
+    width: 33.333%;
+}
+.sh-2-3 {
+    width: 66.666%;
+}
+.sh-1-4 {
+    width: 25%;
+}
+.sh-3-4 {
+    width: 75%;
+}
+.sh-1-5 {
+    width: 20%;
+}
+.sh-2-5 {
+    width: 40%;
+}
+.sh-3-5 {
+    width: 60%;
+}
+.sh-4-5 {
+    width: 80%;
+}
+.sh-1-6 {
+    width: 16.666%;
+}
+.sh-5-6 {
+    width: 83.333%;
+}
+.sh-1-7 {
+    width: 14.285714%;
+}
+.sh-2-7 {
+    width: 28.571428%;
+}
+.sh-3-7 {
+    width: 42.857143%;
+}
+.sh-4-7 {
+    width: 57.142856%;
+}
+.sh-5-7 {
+    width: 71.428571%;
+}
+.sh-6-7 {
+    width: 85.714285%;
+}
+.sh-1-8 {
+    width: 12.5%;
+}
+.sh-3-8 {
+    width: 37.5%;
+}
+.sh-5-8 {
+    width: 62.5%;
+}
+.sh-7-8 {
+    width: 87.5%;
+}
+.sh-grid {
+    width: 100%;
+    padding: 0px;
+}
+.sh-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Text formatting */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0.3rem;
+}
+h1 {
+    font-size: 6rem;
+    line-height: 7.5rem;
+}
+h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+h3 {
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+}
+h4 {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+}
+h5 {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+h6 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+p {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+}
+sub, sup {
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+/* Navigation Styles */
+.sh-nav {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+.sh-horiz-nav {
+    width: 100%;
+}
+.sh-horiz-nav > ul {
+    display: inline-block;
+}
+.sh-horiz-nav li {
+    float: left;
+    display: inline;
+    margin: 0rem 0.5rem;
+}
+.sh-horiz-nav li:first-of-type {
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+.sh-vert-nav {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+.sh-vert-nav > ul {
+    display: inline-block;
+}
+.sh-vert-nav li {                                                                                                                                                   
+    display: block;
+    margin: 0.2rem 0rem;
+}
+.sh-vert-nav li:first-of-type {
+    margin: 0rem 0rem 0.2rem 0rem;
+}
+.sh-nav li:hover {
+    cursor: pointer;
+}
+.sh-content {
+    display: inline-block;
+    float: right;
+    padding: 0;
+    height: inherit;
+}
+@media all and (max-width: 970px) {
+    [class*='sh-'] {
+        width: 100%;
+    }
+    .sh-nav {
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .sh-nav > ul {
+        display: inline-block;
+    }
+    .sh-nav li {
+        display: inline-block;
+        padding: 0.2rem 0.5rem;
+        margin: 0rem 0.5rem 0rem 0rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    h4 {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    h5 {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+}
+
