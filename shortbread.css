@@ -95,7 +95,7 @@ body {
 }
 /* Text formatting */
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0.3rem;
+    margin: 0.8rem;
 }
 h1 {
     font-size: 6rem;
@@ -123,7 +123,7 @@ h6 {
 }
 p {
     font-size: 1.1rem;
-    line-height: 2.2rem;
+    line-height: 1.5rem;
 }
 sub, sup {
     font-size: 1rem;
