@@ -2,7 +2,7 @@
     SHORTBREAD.CSS
     The lightweight & more-ish responsive CSS Framework built by Robert
     Author     : Robert Deniszczyc
-    Version: 1.0.1
+    Version: 1.0.2
     For support tweet @builtbyrobert or email robert@builtbyrobert.com
 */
 body {
@@ -152,7 +152,8 @@ sub, sup {
 }
 .sh-vert-nav {
     height: 100%;
-    position: fixed;
+    /*Change to position: fixed; for fixed vertical navigation*/
+    position: absolute;
     top: 0;
     left: 0;
     display: inline-block;
