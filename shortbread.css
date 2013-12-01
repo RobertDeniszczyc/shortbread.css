@@ -150,9 +150,15 @@ sub, sup {
 .sh-horiz-nav li:first-of-type {
     margin: 0rem 0.5rem 0rem 0rem;
 }
-.sh-vert-nav {
+.sh-vert-nav-fixed {
     height: 100%;
-    /*Change to position: fixed; for fixed vertical navigation*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+.sh-vert-nav-absolute {
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
