@@ -2,7 +2,7 @@
     SHORTBREAD.CSS
     The lightweight & more-ish responsive CSS Framework
     Author     : Robert Deniszczyc
-    Version: 1.1
+    Version: 2.0
     For support tweet @builtbyrobert or email robert@builtbyrobert.com
 */
 body {
@@ -94,96 +94,60 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-/* Text formatting */
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0.8rem;
-}
-h1 {
-    font-size: 6rem;
-    line-height: 7.5rem;
-}
-h2 {
-    font-size: 3rem;
-    line-height: 4rem;
-}
-h3 {
-    font-size: 1.9rem;
-    line-height: 2.8rem;
-}
-h4 {
-    font-size: 1.6rem;
-    line-height: 2.3rem;
-}
-h5 {
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-}
-h6 {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-}
-p {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-}
-sub, sup {
-    font-size: 1rem;
-    line-height: 1.1rem;
-}
 /* Navigation Styles */
 .sh-nav {
-    list-style-type:none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
-.sh-horiz-nav {
+.sh-nav-horiz {
     width: 100%;
-}
-.sh-horiz-nav > ul {
     display: inline-block;
 }
-.sh-horiz-nav li {
+.sh-nav-horiz-fixed {
+    position: fixed;
+}
+.sh-nav-horiz li {
     float: left;
     display: inline;
     margin: 0rem 0.5rem;
 }
-.sh-horiz-nav li:first-of-type {
+.sh-nav-horiz li:first-of-type {
     margin: 0rem 0.5rem 0rem 0rem;
 }
-.sh-vert-nav-fixed {
+.sh-nav-vert {
     height: 100%;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+.sh-nav-vert-fixed {
     position: fixed;
-    top: 0;
-    left: 0;
-    display: inline-block;
 }
-.sh-vert-nav-absolute {
-    height: 100%;
+.sh-nav-vert-absolute {
     position: absolute;
-    top: 0;
-    left: 0;
+}
+.sh-nav-vert > ul {
     display: inline-block;
 }
-.sh-vert-nav > ul {
-    display: inline-block;
-}
-.sh-vert-nav li {                                                                                                                                                   
+.sh-nav-vert li {                                                                                                                                                   
     display: block;
     margin: 0.2rem 0rem;
 }
-.sh-vert-nav li:first-of-type {
+.sh-nav-vert li:first-of-type {
     margin: 0rem 0rem 0.2rem 0rem;
 }
 .sh-nav li:hover {
     cursor: pointer;
 }
+
+/* Content */
 .sh-content {
     display: inline-block;
     float: right;
     padding: 0;
     height: inherit;
 }
-
 @media all and (max-width: 970px) {
     [class*='sh-'] {
         width: 100%;
@@ -202,25 +166,4 @@ sub, sup {
         padding: 0.2rem 0.5rem;
         margin: 0rem 0.5rem 0rem 0rem;
     }
-    h1 {
-        font-size: 3.5rem;
-        line-height: 4rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-    h4 {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-    }
-    h5 {
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-    }
 }
-
